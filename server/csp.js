@@ -124,6 +124,7 @@ module.exports = (reportUri, reportOnly) => {
   const customDirectives = {
     // Example: Add custom directive override
     // imgSrc: exampleImgSrc,
+    'img-src': ['self', 'https://cdn.weglot.com'],
   };
 
   // ================ END CUSTOM CSP URLs ================ //
