@@ -190,13 +190,3 @@ export {
   mergeConfig,
   fetchAppAssets,
 };
-const express = require('express');
-const app = express();
-
-app.use((req, res, next) => {
-    res.setHeader('Content-Security-Policy', "script-src 'self' https://cdn.weglot.com/");
-    next();
-});
-
-// Your other middleware and route handling
-
